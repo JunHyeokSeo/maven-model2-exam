@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="db.properties" />
+	<typeAliases>
+		<!--DTO Class 별칭 설정-->
+		<typeAlias type="model.MemberDTO" alias="member"></typeAlias>
+	</typeAliases>
+	<!--DB 접속에 필요한 값 설정-->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassName}" />
+				<property name="url" value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!--mapper 파일 위치 명시, mapper 파일은 테이블과 동일하게 증가한다-->
+	<mappers>
+		<mapper resource="member.xml"/>
+	</mappers>
+</configuration>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="boardns">
+
+	<!-- 글작성(원문) -->
+	<insert id="insert" parameterType="board">
+		insert into mybatisboard
+		values (mybatisboard_seq.nextval,
+		        #{board_name}, #{board_pass}, #{board_subject}, #{board_content},
+		        #{board_file,jdbcType=VARCHAR}, mybatisboard_seq.nextval, 0, 0, 0, sysdate)
+	</insert>
+
+	<!-- 글갯수 -->
+	<select id="count" resultType="int">
+		select count(*)
+		from mybatisboard
+	</select>
+
+	<!-- 글목록 : page 전달 -->
+	<!-- > : &gt;   < : &lt; -->
+<!--	<select id="list" parameterType="int" resultType="board">-->
+<!--	  select * from (select rownum rnum, board.* from (-->
+<!--	  select * from mybatisboard order by board_re_ref desc,-->
+<!--	  board_re_seq asc ) board )-->
+<!--	  where rnum &gt;= (#{page}-1)*10+1 and rnum &lt;= #{page}*10	-->
+<!--	</select>-->
+
+	<!-- 글목록 : Map 전달 -->
+	<select id="list" parameterType="Map" resultType="board">
+		select *
+		from (select rownum rnum, board.*
+		      from (select *
+		            from mybatisboard
+		            order by board_re_ref desc,
+		                     board_re_seq asc) board)
+		where rnum &gt;= #{start}
+		  and rnum &lt;= #{end}
+	</select>
+
+	<!-- 조회수 1증가 -->
+	<update id="updateCount" parameterType="int">
+		update mybatisboard
+		set board_readcount=board_readcount + 1
+		where board_num = #{board_num}
+	</update>
+
+	<!-- 상세 페이지 -->
+	<select id="content" parameterType="int" resultType="board">
+		select *
+		from mybatisboard
+		where board_num = #{board_num}
+	</select>
+
+	<!-- 댓글 출력 순서 -->
+	<update id="updateSeq" parameterType="board">
+		update mybatisboard
+		set board_re_seq=board_re_seq + 1
+		where board_re_ref = #{board_re_ref}
+		  and board_re_seq &gt; #{board_re_seq}
+	</update>
+
+	<!-- 댓글 작성 -->
+	<insert id="replyInsert" parameterType="board">
+		insert into mybatisboard
+		values (mybatisboard_seq.nextval,
+		        #{board_name}, #{board_pass}, #{board_subject}, #{board_content},
+		        #{board_file,jdbcType=VARCHAR}, #{board_re_ref}, #{board_re_lev},
+		        #{board_re_seq}, 0, sysdate)
+	</insert>
+
+	<update id="update" parameterType="board">
+		update mybatisboard
+		set board_name=#{board_name},
+		    board_subject=#{board_subject},
+		    board_content=#{board_content}
+		where board_num = #{board_num}
+	</update>
+
+	<delete id="delete" parameterType="int">
+		delete from mybatisboard where board_num=#{board_num}
+	</delete>
+</mapper>
+
+
+
+
+

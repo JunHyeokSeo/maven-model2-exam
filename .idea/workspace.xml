@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="model2member:war exploded" />
+      <artifact name="model2board:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,41 +10,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d790e6c-46e0-44c4-a21e-e31cba732e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-model2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/dao/MemberDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/model/MemberDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/ActionForward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/Delete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/IdCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/MemberInsert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/Update.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/java/service/UpdateMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/resources/member.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/deleteform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/loginform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/logout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/member.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/memberform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/member/updateform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2member/src/main/webapp/sql/totoro.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/dao/BoardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/model/BoardBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/ActionForward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardAddAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardDetailAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardListAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardModify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardModifyForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardReply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/java/service/BoardReplyForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/resources/board.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/board_delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/board_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/board_modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/board_reply.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/board_view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/board_write.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/file_down.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/board/모델2로 구현한 게시판.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2board/src/main/webapp/sql/board2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,48 +63,67 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="2XKOgFZfskc7OnXdJYH3HG1RiC2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jun/Documents/Dev_project/web/maven-model2/model2member/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/maven-model2/model2board/src/main/java/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;oracle&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/model2member/src/main/resources" />
-      <recent name="$PROJECT_DIR$/model2member/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/model2member/src/main/java" />
+      <recent name="$PROJECT_DIR$/model2board/src/main/java/service" />
+      <recent name="$PROJECT_DIR$/model2board/src/main/resources" />
+      <recent name="$PROJECT_DIR$/model2board/src/main/java/dao" />
+      <recent name="$PROJECT_DIR$/model2board/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/model2board/src/main/java" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="maven-model2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="maven-model2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="model2member:war exploded">
+        <artifact name="model2board:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/model2board_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -182,7 +202,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="model2member:war exploded" />
+          <artifact name="model2board:war exploded" />
         </option>
       </method>
     </configuration>
@@ -198,6 +218,7 @@
       <workItem from="1698374419416" duration="5114000" />
       <workItem from="1698391772273" duration="367000" />
       <workItem from="1698392148025" duration="1374000" />
+      <workItem from="1698636350216" duration="6124000" />
     </task>
     <servers />
   </component>
@@ -214,5 +235,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
